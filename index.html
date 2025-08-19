@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fat Boy Pizza - Authentic Italian Pizza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="pro3.css">
+</head>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">FAT <span>BOY</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Fat <samp>Boy Pizza</samp></h1>
+            <p>Experience the authentic taste of Italy with our handcrafted pizzas made from the finest ingredients and traditional recipes passed down through generations.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn">View Our Menu</a>
+                <a href="#contact" class="btn btn-outline">Order Now</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="pizza-animation">
+                <i class="fas fa-pizza-slice"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <div class="section-title">
+            <h2>Our Specialties</h2>
+            <p>Discover our most popular pizzas crafted with passion and tradition</p>
+        </div>
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All Pizzas</button>
+            <button class="category-btn" data-category="meat">Meat Lovers</button>
+            <button class="category-btn" data-category="veggie">Vegetarian</button>
+            <button class="category-btn" data-category="specialty">Specialty</button>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-item" data-category="specialty">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/18d2f5fb-074a-4db6-a747-9ad05748ba3c.png" alt="Classic Margherita pizza with fresh basil leaves on top of melted mozzarella cheese and tomato sauce">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>Margherita</h3>
+                        <div class="price">$12.99</div>
+                    </div>
+                    <p>Classic pizza with tomato sauce, fresh mozzarella, basil, and extra virgin olive oil.</p>
+                    <div class="menu-item-footer">
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" data-category="meat">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d9b23cb7-67fc-440e-8a70-9c35eb945acc.png" alt="Pepperoni pizza with crispy curled pepperoni slices and bubbling cheese across the surface">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>Pepperoni</h3>
+                        <div class="price">$14.99</div>
+                    </div>
+                    <p>Crispy pepperoni, mozzarella cheese, and our signature tomato sauce.</p>
+                    <div class="menu-item-footer">
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" data-category="veggie">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e9dc8be9-094d-4738-a12a-bede770648d6.png" alt="Vegetarian pizza loaded with bell peppers, mushrooms, olives, and onions on a crispy crust">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>Veggie Delight</h3>
+                        <div class="price">$13.99</div>
+                    </div>
+                    <p>Loaded with fresh vegetables including bell peppers, mushrooms, olives, and onions.</p>
+                    <div class="menu-item-footer">
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" data-category="meat">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0e5f8403-efe3-4f2e-a448-f29be67316c3.png" alt="Meat lovers pizza with generous portions of sausage, bacon, ham and pepperoni">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>Meat Lovers</h3>
+                        <div class="price">$16.99</div>
+                    </div>
+                    <p>A carnivore's dream with sausage, bacon, ham, and pepperoni.</p>
+                    <div class="menu-item-footer">
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" data-category="specialty">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8f2c978-d1d7-4591-ac33-88da67330155.png" alt="Hawaiian pizza with juicy pineapple chunks and Canadian bacon on golden crust">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>Hawaiian</h3>
+                        <div class="price">$14.99</div>
+                    </div>
+                    <p>Sweet pineapple and savory Canadian bacon – a tropical delight.</p>
+                    <div class="menu-item-footer">
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>3.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" data-category="specialty">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4f1d48fd-391e-4fb4-bdd2-11ce3c0e3ad0.png" alt="BBQ chicken pizza with smoky grilled chicken pieces and red onions on barbecue sauce base">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>BBQ Chicken</h3>
+                        <div class="price">$15.99</div>
+                    </div>
+                    <p>Tangy barbecue sauce, grilled chicken, red onions, and mozzarella.</p>
+                    <div class="menu-item-footer">
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="section-title">
+            <h2>Our Story</h2>
+            <p>Discover the tradition behind our authentic Italian pizzas</p>
+        </div>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/591a9a4c-c437-4d81-9a02-1c3289cd7f17.png" alt="Authentic Italian pizzeria interior with wood-fired oven and chefs preparing pizzas">
+                <div class="about-badge">
+                    <i class="fas fa-award"></i>
+                    <span>Since 1985</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2>Authentic Italian Pizza Since 1985</h2>
+                <p>Fat Boy Pizza was founded by Antonio Rossi who brought his family's secret pizza recipes from Naples to share with the world. What started as a small family-run pizzeria has grown into a beloved local institution.</p>
+                <p>We still use the same traditional methods and ingredients imported directly from Italy to create our authentic Neapolitan-style pizzas. Our wood-fired oven reaches temperatures of 900°F, creating the perfect crispy yet chewy crust in just 90 seconds.</p>
+                <p>Every pizza is handcrafted with care, using only the freshest ingredients and topped with love. We invite you to taste the difference that tradition and passion make.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">38</span>
+                        <span class="stat-label">Years in Business</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15K+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">25</span>
+                        <span class="stat-label">Pizza Varieties</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <div class="section-title">
+            <h2>Customer Reviews</h2>
+            <p>Hear what our customers have to say about our pizzas</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <div class="testimonial-text">
+                        "The best pizza I've ever had outside of Italy! The crust is perfectly crispy, and the toppings are always fresh. Fat Boy Pizza is my family's Friday night tradition!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Johnson</div>
+                            <div class="author-date">2 weeks ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <div class="testimonial-text">
+                        "As someone who's lived in Naples, I can honestly say this is the most authentic Italian pizza I've found in the city. The Margherita takes me back to Italy every time!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Marco Rossi</div>
+                            <div class="author-date">1 month ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <div class="testimonial-text">
+                        "The Veggie Delight is amazing! Even as a meat lover, I find myself craving this pizza regularly. The vegetables are always fresh and the flavor combination is perfect."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Emily Chen</div>
+                            <div class="author-date">3 weeks ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-title">
+            <h2>Find Us</h2>
+            <p>Visit our pizzeria or get in touch for inquiries and reservations</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                    <p>123 Pizza Street<br>Egypt, Mansoura</p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.985559711399!2d31.3795!3d31.0425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDM3JzUuMiTiAzMcKwMjUnMTAuMCJF!5e0!3m2!1sen!2seg!4v1620000000000!5m2!1sen!2seg" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <h3><i class="fas fa-clock"></i> Hours</h3>
+                    <div class="hours-table">
+                        <div class="hours-row">
+                            <div class="day">Monday - Thursday</div>
+                            <div class="time">11am - 10pm</div>
+                        </div>
+                        <div class="hours-row">
+                            <div class="day">Friday - Saturday</div>
+                            <div class="time">11am - 11pm</div>
+                        </div>
+                        <div class="hours-row">
+                            <div class="day">Sunday</div>
+                            <div class="time">12pm - 9pm</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <h3><i class="fas fa-phone-alt"></i> Contact</h3>
+                    <p>Phone: <a href="tel:+20555549992">(+20) 555-PIZZA</a></p>
+                    <p>Email: <a href="mailto:info@fatboypizza.com">info@fatboypizza.com</a></p>
+                    <div class="contact-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="form-message" id="formMessage"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo">FAT <span>BOY</span></div>
+                <p>Authentic Italian Pizza Since 1985</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Our Menu</h4>
+                    <ul>
+                        <li><a href="#">Margherita</a></li>
+                        <li><a href="#">Pepperoni</a></li>
+                        <li><a href="#">Veggie Delight</a></li>
+                        <li><a href="#">Meat Lovers</a></li>
+                        <li><a href="#">Specialty Pizzas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get special offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2023 Fat Boy Pizza. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
